@@ -1,2 +1,2 @@
 # KingDice
-Freaks 봇 구버전 소코드
+Freaks 봇 구버전 소스코드
