@@ -138,7 +138,6 @@ async function playTrump(interaction, bet, user, today) {
 
     const resultEmbed = new EmbedBuilder()
         .setTitle(winType === 1 ? "당신의 승리입니다!" : (winType === 2 ? "패배하셨군요." : "무승부"))
-        // [수정] 백틱(`)을 사용하여 결과 메시지 및 금액 표시 완성
         .setDescription(`${resultMsg}\n\n━━━━━━━━━━━━━━\n킹 다이스의 패: [ ${dealerCard.display} ]\n당신의 패: [ ${playerCard.display} ]\n━━━━━━━━━━━━━━\n\n결과: ${change > 0 ? '+' : ''}${change.toLocaleString()} G\n현재 잔고: ${updatedUser.money.toLocaleString()} G`)
         .setColor(winType === 1 ? 0x00FF00 : (winType === 2 ? 0xFF0000 : 0x808080))
         .setTimestamp();
